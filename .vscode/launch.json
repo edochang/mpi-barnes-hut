@@ -1,0 +1,55 @@
+{
+    "configurations": [
+        {
+            "name": "Attach C/C++: mpicc build and debug active file",
+            "type": "cppdbg",
+            "request": "attach",
+            "processId": "${command:pickProcess}",
+            "program": "${workspaceFolder}/debug/nbody",
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "C/C++: mpicc build active file",
+            "miDebuggerPath": "/usr/bin/gdb"
+        },
+        {
+            "name": "Launch C/C++: mpicc build and debug active file",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/debug/nbody",
+            "args": [
+                "-i",
+                "input/nb-10.txt",
+                "-o",
+                "output/nb-10.txt",
+                "-s",
+                "1",
+                "-t",
+                "0.5",
+                "-d",
+                ".01",
+                "-v"
+            ],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "C/C++: mpicc build active file",
+            "miDebuggerPath": "/usr/bin/gdb"
+        }
+    ],
+    "version": "2.0.0"
+}
