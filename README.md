@@ -1,5 +1,12 @@
 # Message Passing Interface (MPI) with Barnes-Hut Algorithm
 
+## Visualization Intro
+[![nbody 20000 steps]](./markdown_assets/nbody.mp4 "nbody")
+
+The visualization above was ran by running the following terminal command:
+
+    mpirun -np 10 ./bin/nbody -i input/nb-10.txt -o ./output/nb-10-out.txt -s 20000 -t 0.5 -d .01 -v
+
 ## Approach to Parallelizing Barnes-Hut Algorithm 
 The first approach I took before attempting to parallelize the N-Body Barnes-Hut Algorithm was to understand the algorithm itself and then write the sequential version of it.  The sequential version will be needed to evaluate the gains from MPI parallelization.  The algorithm can be broken down into the following key components:
 -	A data structure to represent the Barnes-Hut Tree.  In this lab, it is a Quad Tree representing a 2D space from 0 to 4 on both the x and y axis.
