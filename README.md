@@ -181,3 +181,8 @@ Run the following in the terminal:
         [Required]--theta or -t <threshold for MAC (double)>
         [Required]--dt or -d <timestep (double)>
         [Optional] -v <flag to turn on visualization window>
+
+## Reference
+
+- [The Barnes-Hut Algorithm, TOM VENTIMIGLIA & KEVIN WAYNE](http://arborjs.org/docs/barnes-hut)
+- [Barnes-Hut Galaxy Simulator, Princeton University, 2003](https://www.cs.princeton.edu/courses/archive/fall03/cs126/assignments/barnes-hut.html)
