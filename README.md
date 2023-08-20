@@ -1,7 +1,7 @@
 # Message Passing Interface (MPI) with Barnes-Hut Algorithm
 
 ## Visualization Intro
-[![nbody 20000 steps]](./markdown_assets/nbody.mp4 "nbody")
+https://github.com/edochang/mpi-barnes-hut/assets/8861870/13d3796b-55a8-4c20-94b7-5490fb726dc7
 
 The visualization above was ran by running the following terminal command:
 
